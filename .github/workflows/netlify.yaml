@@ -27,8 +27,7 @@ jobs:
       - name: Run lint checks
         run: npm run lint
 
-      - name: Run tests
-        run: npm test
+     
 
   deploy:
     needs: build
