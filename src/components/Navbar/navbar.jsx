@@ -1,4 +1,3 @@
-import React from "react";
 import rohit from '../../assets/logo.png';
 import contact from '../../assets/contact.png';
 import './navbar.css';

@@ -1,4 +1,4 @@
-import React from "react";
+
 import html from "../../assets/html.png";
 import css from "../../assets/css1.png";
 import react1 from "../../assets/react.png";

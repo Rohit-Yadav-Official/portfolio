@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import bounce1 from "../../assets/file.png"; // Ensure the path to your image is correct
 import './bounce.css';
 

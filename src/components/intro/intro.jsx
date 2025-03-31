@@ -1,4 +1,4 @@
-import React from "react";
+
 import bg from "../../assets/pxArt.png";
 import hiimage from "../../assets/hiimage.png";
 import youtube from "../../assets/youtube.png";
@@ -28,7 +28,7 @@ const Intro = () => {
 
         {/* Text Section */}
         <span className="introText">
-          I'm <span className="introName">Rohit Yadav</span>
+          I&apos;m <span className="introName">Rohit Yadav</span>
           <br />
           Backend Developer
         </span>

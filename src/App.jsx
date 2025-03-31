@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './App.css';
 import Navbar from './components/Navbar/navbar';
 import Bounce from './components/bouncing/bounce';
@@ -17,6 +17,7 @@ function App() {
         <Skills /> {/* Below Intro */}
         <Project/>
         <Dsa/>
+        
       </div>
     </div>
   );
