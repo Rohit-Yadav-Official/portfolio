@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+.navBar {
+   position: fixed;/* Makes the navbar fixed to the viewport */
+  top: 0;          /* Aligns it to the top */
+         /* Aligns it to the left */
+  height: 5rem;
+  width: 100%;
+  
+  margin: 0;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+ /* Ensure background so content doesn't show through */
+  /* Add subtle shadow for a clean look */
+  z-index: 1000; /* Ensures it stays above other elements */
+}
+
+.logo {
+  height: 12em;
+  padding: 1.8em;
+  padding-top: 3rem;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.desktopMenu {
+  display: flex;
+  gap: 2rem;
+}
+.desktopMenuListItem{
+
+  margin: 1rem;
+  cursor: pointer;
+  
+  cursor: url('../../assets/point.png'), pointer; /* Change cursor on hover */
+  
+  
+}
+.contactNavBar{
+  object-fit: cover;
+  height: 1rem;
+  width: 1rem;
+  margin: 1rem;
+}
+.contactButton{
+  background-color: white;
+  cursor: url('../../assets/point.png'), pointer;
+  color: black;
+  font-family: 'Press Start 2P', monospace; /* Pixel-style font */
+   /* Adjust for consistent typography */
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+  width: fit-content;
+  justify-content: center;
+ 
+  position: relative; /* Required for pseudo-element */
+  overflow: hidden; /* Prevent pseudo-element overflow */
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+.contactButton:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 0 20px #646cff, 
+              0 0 40px #646cff, 
+              0 0 60px #5961f1; /* Outer glow */
+}
+
+.contactNavBar {
+  height: 20px;
+}
+.desktopMenuListItem {
+  display: inline-block;
+   /* Adjust size for pixel look */
+  font-family: 'Press Start 2P', monospace; /* Pixel-style font */
+  font-size: 1.3rem; /* Adjust for consistent typography */
+  margin: 0 1.5rem; /* Horizontal spacing between menu items */
+  padding: 0.5rem 1rem; /* Add padding for better click area */
+  color: #a8a3a3; /* Default text color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  position: relative; /* Required for hover effects */
+}
+
+.desktopMenuListItem:hover {
+  color: #50e48e; /* Highlight color on hover */
+  transform: scale(1.1); /* Slight zoom-in effect */
+  box-shadow: 0 0 4px rgba(80, 228, 142, 0.8),
+              0 0 8px rgba(80, 228, 142, 0.6); /* Glow effect on hover */
+}
+
+.desktopMenuListItem:active {
+  transform: scale(0.95); /* Slight shrink on click */
+}

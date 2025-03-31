@@ -1,0 +1,58 @@
+.image-container{
+   height: fit-content;
+   width: fit-content;
+  background-color: burlywood;
+}
+
+/* Image style with bounce and fly-in animation */
+.bouncing-image {
+  position: absolute;
+  top: 30%; /* Start vertically centered */
+  left: 0; /* Start at the left edge of the container */
+  transform: translateY(-50%);
+  width: 180px; /* Image size */
+  height: auto;
+  animation: flyInSpace 15s linear infinite, bounceUpDown 5s ease-in-out infinite alternate;
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity */
+}
+
+/* Keyframe for bouncing up and down */
+@keyframes bounceUpDown {
+  0% {
+    /* transform: translateY(-0%); Center vertically */
+  }
+  25% {
+    transform: translateY(-80%); /* Move slightly up */
+  }
+  50% {
+    transform: translateY(-40%); 
+  }
+  75% {
+    transform: translateY(-70%); /* Move slightly down */
+  }
+  100% {
+    transform: translateY(-40%); /* Back to center */
+  }
+}
+
+/* Keyframe for moving the image from left to right */
+@keyframes flyInSpace {
+  0% {
+    left: 0; /* Start at the left edge of the container */
+  }
+  100% {
+    left: 100%; /* Move to the right edge of the container */
+  }
+}
+
+/* Add a class to hide the image when it bursts */
+.hidden {
+  opacity: 0; /* Fade the image out */
+  pointer-events: none; /* Prevent clicks when hidden */
+}
+
+/* When the animation is paused on hidden state, stop the movement */
+.stopped-animation {
+  animation-play-state: paused !important;
+}

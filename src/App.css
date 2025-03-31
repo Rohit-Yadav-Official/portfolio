@@ -1,0 +1,27 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #000; /* Light background for contrast */
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Content Section: Holds all components under Navbar */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem; /* Spacing between Bounce, Intro, and Skills */
+  align-items: center;
+  width: 100%;
+  padding: 4rem 0; /* Add padding around components */
+}

@@ -1,0 +1,14 @@
+*{
+  margin:0;
+  padding :0;
+  box-sizing: border-box ;
+  text-decoration: none;
+  background: transparent;
+
+}
+body{
+  background-color: #000;
+    overflow-wrap: normal;
+    overflow-y: scroll;
+    cursor: url('./src/assets/cursor.jpg'), auto;
+}

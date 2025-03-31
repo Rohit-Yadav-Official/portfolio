@@ -1,0 +1,72 @@
+/* General container styling */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.skill {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color:transparent; /* Light background */
+    
+  }
+  
+  /* Column styling */
+  .colum1,
+  .colum2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1; /* Equal width for both columns */
+  }
+  
+  .colum1 div,
+  .colum2 div {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    background:transparent; /* White card background */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 2px 4px 6px  #007bff;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .colum1 div:hover,
+  .colum2 div:hover {
+    transform: translateY(-5px); /* Subtle hover effect */
+  }
+  
+  /* Image styling */
+  .colum1 img,
+  .colum2 img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  
+  /* Text and progress container */
+  .colum1 span,
+  .colum2 span {
+    font-size: 1rem;
+    font-family: 'Press Start 2P', monospace;
+    color: #e0d9d96d;
+    font-weight: bold;
+  }
+  
+  /* Progress Bar Container */
+  .progress-container {
+    flex: 1; /* Take the remaining space */
+    height: 8px;
+    background-color: #007bff;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #4caf50; /* Progress bar color */
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+  }
+  

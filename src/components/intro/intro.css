@@ -1,0 +1,164 @@
+/* Import Pixel Font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Intro Section Container */
+#intro {
+  height: calc(100vh - 4rem);
+  width: 200vh;
+  max-width: 100rem;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+/* Background Image */
+.bg {
+  position: absolute;
+  top: -4rem;
+  right: 0;
+  height: 40rem;
+  padding-top: 10rem;
+  padding-right: 10rem;
+  object-fit: cover;
+  z-index: -1; /* Send it behind content */
+}
+
+/* Intro Content */
+.introcontent {
+  height: 100vh;
+  width: 120vh;
+  padding: 2rem;
+  padding-left: 14rem;
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Image Group */
+.img {
+  display: flex;
+  align-items: center; /* Align all images to the same base */
+  gap: 1rem; /* Add spacing between the images */
+  margin-bottom: 1rem; /* Add some spacing between images and text */
+}
+
+/* Hi Image */
+.hiimage {
+  height: 100px;
+  width: 100px;
+}
+
+/* Icons (YouTube, LinkedIn, GitHub) */
+.youtube,
+.linkdin,
+.github {
+  cursor: url('../../assets/point.png'), pointer;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Add hover effects */
+}
+
+.youtube:hover,
+.linkdin:hover,
+.github:hover {
+  transform: scale(1.2); /* Scale the icon slightly on hover */
+  opacity: 0.8; /* Dim the opacity slightly */
+  cursor: url('../../assets/point.png'), pointer;
+}
+
+/* Pixelated Text Style */
+.introText {
+  font-size: 2.5rem; /* Adjust size for pixel look */
+  font-family: 'Press Start 2P', monospace; /* Pixel-style font */
+  color: #333; /* Text color */
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Hide overflowing text initially */
+  border-right: 2px solid #333; /* Simulate a cursor */
+  animation: typing 5s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
+  line-height: 3.5rem; /* Adjust spacing for pixel text */
+}
+
+/* Highlighted Name Style */
+.introName {
+  color: #007bff; /* Highlight color */
+  font-family: 'Press Start 2P', monospace;
+}
+
+/* Typing Keyframes */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%; /* Full width of the text */
+  }
+}
+
+/* Cursor Blink Effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #333;
+  }
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  #intro {
+    width: 100%;
+  }
+
+  .introcontent {
+    height: auto;
+    width: 90%;
+    padding: 1rem;
+    font-size: 2rem;
+  }
+
+  .bg {
+    height: 30rem;
+    padding-top: 5rem;
+    padding-right: 5rem;
+  }
+
+  .img {
+    flex-wrap: wrap; /* Wrap icons for smaller screens */
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .hiimage {
+    height: 80px;
+    width: 80px;
+  }
+
+  .youtube,
+  .linkdin,
+  .github {
+    height: 30px;
+    width: 30px;
+  }
+}
+/* Download Resume Button */
+.downloadResume {
+   height: 60px;
+    width: 90px;
+  cursor: pointer;
+  
+}
+
+.downloadResume:hover {
+  cursor: url('../../assets/point.png'), pointer;
+  transform: scale(0.95); 
+}
+
+.downloadResume:active {
+  transform: scale(0.95); 
+}
