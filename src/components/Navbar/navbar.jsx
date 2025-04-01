@@ -11,11 +11,14 @@ const Navbar = () => {
         <Link to="intro" className="desktopMenuListItem" smooth={true} duration={500}>Home</Link>
         <Link to="projects" className="desktopMenuListItem" smooth={true} duration={500}>Projects</Link>
         <Link to="dsa" className="desktopMenuListItem" smooth={true} duration={500}>DSA</Link>
+        
       </div>
-      <button className="contactButton">
-        <img src={contact} alt="contact" className="contactNavBar" />
-        Contact Me
-      </button>
+      <Link to="contact" smooth={true} duration={500}>
+        <button className="contactButton">
+          <img src={contact} alt="contact" className="contactNavBar" />
+          Contact Me
+        </button>
+      </Link>
     </nav>
   );
 };

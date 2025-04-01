@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .contact-container {
+    flex-direction: row;
+  }
+}
+
+.contact-title {
+  font-family: 'Press Start 2P', cursive;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.gif-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.gif-container img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 4px 4px 0px black;
+}
+
+/* Pixel Art Border for Form */
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  padding: 20px;
+  border-radius: 0; /* No round corners for pixel effect */
+  position: relative;
+  box-shadow: 
+    4px 4px 0px black, 
+    8px 8px 0px #888, 
+    12px 12px 0px black; /* Creates a pixelated shadow effect */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Pixelated Border for Inputs */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 4px solid black;
+  outline: none;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  color: #333;
+  background: #f8f8f8;
+  box-shadow: 2px 2px 0px black, 4px 4px 0px gray;
+}
+
+.contact-form label {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: black;
+}
+
+/* Pixelated Button */
+.contact-form button {
+  margin-top: 10px;
+  background: black;
+  color: white;
+  border: 4px solid black;
+  padding: 10px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  cursor: pointer;
+  box-shadow: 2px 2px 0px white, 4px 4px 0px black;
+}
+
+.contact-form button:hover {
+  background: #333;
+  box-shadow: 2px 2px 0px gray, 4px 4px 0px black;
+}
