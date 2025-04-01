@@ -2,18 +2,18 @@
 
 .contact-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 20px;
   padding: 20px;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .contact-container {
     flex-direction: row;
   }
-}
+} */
 
 .contact-title {
   font-family: 'Press Start 2P', cursive;
