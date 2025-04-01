@@ -72,7 +72,7 @@
 
 /* Pixelated Text Style */
 .introText {
-  font-size: 2.5rem; /* Adjust size for pixel look */
+  font-size: 2rem; /* Adjust size for pixel look */
   font-family: 'Press Start 2P', monospace; /* Pixel-style font */
   color: #333; /* Text color */
   white-space: nowrap; /* Prevent text wrapping */
