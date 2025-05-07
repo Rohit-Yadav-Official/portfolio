@@ -1,26 +1,36 @@
-
 import './App.css';
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from 'react';
+
 import Navbar from './components/Navbar/navbar';
-import Bounce from './components/bouncing/bounce';
-import Intro from './components/intro/intro';
-import Skills from './components/skills/skills';
-import Project from './components/projects/projects';
-import Dsa from  './components/dsa/dsa';
-import Contact from './components/contact us/contact'
-function App() {
+import HomePage from './components/routes/Homepage';
+import BlogPage from './components/blog/MediumBlogSection';
+
+// Wrapper to use hooks like useLocation outside <Router>
+const AppWrapper = () => {
+  const location = useLocation();
+
+  // Check if current route is /blog
+  const isBlogPage = location.pathname === '/blog';
+
   return (
     <div className="app">
-      <Navbar /> {/* Top Navbar */}
-      <div className="content">
-        <Bounce /> {/* Below Navbar */}
-        <Intro /> {/* Below Bounce */}
-        <Skills /> {/* Below Intro */}
-        <Project/>
-        <Dsa/>
-        <Contact/>
-        
-      </div>
+      {/* Show Navbar only if not on the blog page */}
+      {!isBlogPage && <Navbar />}
+      
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/blog" element={<BlogPage />} />
+      </Routes>
     </div>
+  );
+};
+
+function App() {
+  return (
+    <Router>
+      <AppWrapper />
+    </Router>
   );
 }
 

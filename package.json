@@ -10,9 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "parser": "^0.1.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-scroll": "^1.9.0"
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.5.3",
+    "react-scroll": "^1.9.0",
+    "rss": "^1.2.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",

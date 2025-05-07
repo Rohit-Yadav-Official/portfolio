@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  
 }
 
 body {
@@ -13,6 +13,7 @@ body {
 .app {
   display: flex;
   flex-direction: column;
+
   width: 100%;
 }
 

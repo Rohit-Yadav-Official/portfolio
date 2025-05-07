@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.medium-container {
+  background-color: #121212;
+  color: #ffffff;
+  padding: 3rem;
+  font-family: 'Press Start 2P', monospace;
+}
+
+.medium-heading {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.medium-subtext {
+  font-size: 0.8rem;
+  color: #a1a1a1;
+  margin-bottom: 1.5rem;
+}
+
+.rss-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #f97316;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.rss-icon {
+  font-size: 1.2rem;
+}
+
+.medium-articles {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.medium-article {
+  display: flex;
+  gap: 2rem;
+  border-top: 1px solid #2e2e2e;
+  padding-top: 1.5rem;
+}
+
+.medium-date {
+  min-width: 120px;
+  color: #9ca3af;
+  font-size: 0.95rem;
+}
+
+.medium-content {
+  flex: 1;
+}
+
+.medium-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.medium-snippet {
+  color: #d1d5db;
+  font-size: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.medium-read-link {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.medium-read-link .arrow {
+  font-size: 1.1rem;
+  line-height: 1;
+}
