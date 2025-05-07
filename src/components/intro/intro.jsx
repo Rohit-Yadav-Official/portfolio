@@ -41,7 +41,7 @@ const Intro = () => {
       </div>
 
       {/* Background Image */}
-      <img src={bg} alt="profiler" className="bg" />
+      <img src={bg} alt="Rohit Yadav - Java and Spring Boot Developer" className="bg" />
     </section>
   );
 };
