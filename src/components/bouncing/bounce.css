@@ -14,7 +14,8 @@
   height: auto;
   animation: flyInSpace 15s linear infinite, bounceUpDown 5s ease-in-out infinite alternate;
   cursor: pointer; /* Pointer cursor on hover */
-  transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity */
+  transition: opacity 0.3s ease-in-out;
+  z-index: 5; /* Smooth transition for opacity */
 }
 
 /* Keyframe for bouncing up and down */

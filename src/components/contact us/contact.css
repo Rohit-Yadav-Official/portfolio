@@ -1,24 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+#contact {
+  padding: 2rem 1rem;
+  width: 100%;
+}
+
 .contact-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  padding: 20px;
+  gap: 2rem;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-
-/* @media (min-width: 768px) {
-  .contact-container {
-    flex-direction: row;
-  }
-} */
 
 .contact-title {
   font-family: 'Press Start 2P', cursive;
   color: #333;
   margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 .gif-container {
@@ -30,6 +33,7 @@
   width: 100%;
   border-radius: 8px;
   box-shadow: 4px 4px 0px black;
+  display: block;
 }
 
 /* Pixel Art Border for Form */
@@ -66,6 +70,11 @@
   box-shadow: 2px 2px 0px black, 4px 4px 0px gray;
 }
 
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
 .contact-form label {
   font-family: 'Press Start 2P', cursive;
   font-size: 12px;
@@ -84,9 +93,92 @@
   font-size: 12px;
   cursor: pointer;
   box-shadow: 2px 2px 0px white, 4px 4px 0px black;
+  transition: all 0.2s ease;
 }
 
 .contact-form button:hover {
   background: #333;
   box-shadow: 2px 2px 0px gray, 4px 4px 0px black;
+}
+
+.contact-form button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0 0 0 white, 2px 2px 0px black;
+}
+
+/* Tablet Responsiveness */
+@media (max-width: 900px) {
+  .contact-container {
+    gap: 1.5rem;
+    padding: 0.5rem;
+  }
+  
+  .gif-container, .form-container {
+    max-width: 350px;
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .gif-container, .form-container {
+    max-width: 100%;
+  }
+  
+  .contact-title {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-container {
+    box-shadow: 
+      3px 3px 0px black, 
+      6px 6px 0px #888, 
+      9px 9px 0px black;
+    padding: 15px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 8px;
+    border-width: 3px;
+    font-size: 10px;
+  }
+  
+  .contact-form label {
+    font-size: 10px;
+  }
+  
+  .contact-form button {
+    padding: 8px;
+    font-size: 10px;
+    border-width: 3px;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  #contact {
+    padding: 1rem 0.5rem;
+  }
+  
+  .contact-container {
+    padding: 0;
+  }
+  
+  .contact-title {
+    font-size: 1rem;
+  }
+  
+  .form-container {
+    box-shadow: 
+      2px 2px 0px black, 
+      4px 4px 0px #888, 
+      6px 6px 0px black;
+    padding: 12px;
+  }
 }

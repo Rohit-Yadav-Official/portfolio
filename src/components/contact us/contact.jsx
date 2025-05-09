@@ -1,39 +1,37 @@
+import React from "react";
+import "./contact.css";
 
-import "../contact us/contact.css";
-
-const contact = () => {
+const Contact = () => {
   return (
-    <section id="contact" >
+    <section id="contact">
+      <div className="contact-container">
+        {/* GIF */}
+        <div className="gif-container">
+          <img
+            src="https://imgur.com/939ZFHs.gif"
+            alt="Animated GIF"
+          />
+        </div>
 
-   
-    <div className="contact-container">
-      {/* GIF */}
-      <div className="gif-container">
-        <img
-          src="https://imgur.com/939ZFHs.gif"
-          alt="Animated GIF"
-        />
+        {/* Form */}
+        <div className="form-container">
+          <h2 className="contact-title">Contact Me</h2>
+          <form className="contact-form">
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name" />
+            
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" />
+            
+            <label>Message</label>
+            <textarea placeholder="Your message"></textarea>
+            
+            <button type="submit">Submit</button>
+          </form>
+        </div>
       </div>
-
-      {/* Form */}
-      <div className="form-container">
-        <h2 className="contact-title">Contact Me</h2>
-        <form className="contact-form">
-          <label>Name</label>
-          <input type="text" placeholder="Enter your name" />
-          
-          <label>Email</label>
-          <input type="email" placeholder="Enter your email" />
-          
-          <label>Message</label>
-          <textarea placeholder="Your message"></textarea>
-          
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-    </div>
-     </section>
+    </section>
   );
 };
 
-export default contact;
+export default Contact;
