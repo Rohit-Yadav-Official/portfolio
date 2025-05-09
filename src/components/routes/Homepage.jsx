@@ -13,7 +13,7 @@ function HomePage(){
         <Bounce /> {/* Below Navbar */}
         <Intro /> {/* Below Bounce */}
         <Skills /> {/* Below Intro */}
-       {/* <Project/> */}
+       <Project/>
         <Dsa/>
         <Contact/>
         
