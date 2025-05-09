@@ -1,22 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 
+
 .navBar {
-   position: fixed;/* Makes the navbar fixed to the viewport */
-  top: 0;          /* Aligns it to the top */
-         /* Aligns it to the left */
-  height: 5rem;
-  width: 100%;
-  
-  margin: 0;
-  padding: 1rem 2rem;
   display: flex;
   align-items: center;
-  justify-content:space-between;
- /* Ensure background so content doesn't show through */
-  /* Add subtle shadow for a clean look */
-  z-index: 1000; /* Ensures it stays above other elements */
+  justify-content: space-between;
+  top: -9%;  
+  position: fixed;
+  z-index: 1000;
+  gap:6rem;
+  padding: 0.75rem 1.5rem; /* reduce if needed */
 }
+
 
 .logo {
   height: 12em;
@@ -110,6 +106,23 @@
 
 /* Media query for small screens */
 @media (max-width: 1200px) {
+  .navBar {
+    position: fixed;/* Makes the navbar fixed to the viewport */
+   top: 0;          /* Aligns it to the top */
+          /* Aligns it to the left */
+   height: 5rem;
+   width: 100%;
+   
+   margin: 0;
+   padding: 1rem 2rem;
+   display: flex;
+   align-items: center;
+   justify-content:space-between;
+  /* Ensure background so content doesn't show through */
+   /* Add subtle shadow for a clean look */
+   z-index: 1000; /* Ensures it stays above other elements */
+ }
+ 
   .hamburger {
     display: block;
   }
