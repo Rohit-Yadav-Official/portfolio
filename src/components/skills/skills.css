@@ -6,6 +6,7 @@
     justify-content: center;
     gap: 2rem;
     padding: 2rem;
+     /* ⬅️ Add this to reduce top spacing */
     background-color: transparent; /* Light background */
     /* Make the container responsive */
     flex-wrap: wrap;
@@ -77,6 +78,7 @@
     .skill {
         flex-direction: column;
         padding: 1rem;
+        
     }
 
     .colum1,

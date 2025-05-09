@@ -11,7 +11,7 @@
 
 /* Individual project item */
 .project-card {
-  flex: 0 0 100%;
+  flex: 0 0 90%;
   scroll-snap-align: start;
   background-color: #1e1e1e;
   padding: 2rem;
