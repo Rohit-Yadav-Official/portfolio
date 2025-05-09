@@ -139,8 +139,10 @@
 /* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
   #intro {
+    align-items: center;
     padding-top:10%;
     height: 90vh;
+    padding-right: 30%;
     margin-bottom: -30%;
     display: flex;
     flex-direction: column;
