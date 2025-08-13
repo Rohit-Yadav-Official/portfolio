@@ -34,9 +34,9 @@ const Intro = () => {
         </span>
 
         {/* Download Resume Button */}
-        <a href={resume} download="Rohit_Yadav_Resume.pdf" className="downloadResume">
+        <a href={resume} target="_blank" rel="noopener noreferrer" className="downloadResume">
           <img src={resumeb} alt="resumebutton" />
-          
+           
         </a>
       </div>
 
