@@ -4,7 +4,7 @@ import hiimage from "../../assets/hiimage.png";
 import youtube from "../../assets/youtube.png";
 import github from "../../assets/git.jpg";
 import linkdin from "../../assets/linkdin.png";
-import resume from "../../assets/resume1732.pdf";
+import resume from "../../assets/resume645.pdf";
 import resumeb from "../../assets/resumebutton.png";
 import "./intro.css";
 
