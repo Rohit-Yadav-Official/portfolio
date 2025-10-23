@@ -106,6 +106,52 @@
   box-shadow: 0 0 0 white, 2px 2px 0px black;
 }
 
+.contact-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Form Status Messages */
+.form-message {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.65rem;
+  border-radius: 4px;
+  text-align: center;
+  animation: slideIn 0.3s ease;
+}
+
+.form-message.success {
+  background-color: #4caf50;
+  color: white;
+  border: 2px solid #45a049;
+}
+
+.form-message.error {
+  background-color: #f44336;
+  color: white;
+  border: 2px solid #da190b;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Disabled input states */
+.contact-form input:disabled,
+.contact-form textarea:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 /* Tablet Responsiveness */
 @media (max-width: 900px) {
   .contact-container {
