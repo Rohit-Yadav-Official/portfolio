@@ -1,17 +1,39 @@
 import { useEffect, useState } from "react";
-import { FaRss } from "react-icons/fa";
+import { FaRss, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "./MediumBlogSection.css";
 
 const MediumBlogSection = () => {
-  const [posts, setPosts] = useState([]);
+  const [allPosts, setAllPosts] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const postsPerPage = 5;
 
   useEffect(() => {
     fetch("https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@yadavrohit-dev")
       .then(res => res.json())
       .then(data => {
-        setPosts(data.items.slice(0, 5));
+        setAllPosts(data.items);
       });
   }, []);
+
+  // Calculate pagination
+  const totalPages = Math.ceil(allPosts.length / postsPerPage);
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = allPosts.slice(indexOfFirstPost, indexOfLastPost);
+
+  const handleNextPage = () => {
+    if (currentPage < totalPages) {
+      setCurrentPage(currentPage + 1);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
+  const handlePrevPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
 
   return (
     <section className="medium-container">
@@ -26,7 +48,7 @@ const MediumBlogSection = () => {
         <a href="https://medium.com/feed/@yadavrohit-dev" target="_blank" rel="noopener noreferrer">RSS Feed</a>
       </div>
       <div className="medium-articles">
-        {posts.map((post, index) => (
+        {currentPosts.map((post, index) => (
           <div key={index} className="medium-article">
             <div className="medium-date">
               {new Date(post.pubDate).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" })}
@@ -41,6 +63,31 @@ const MediumBlogSection = () => {
           </div>
         ))}
       </div>
+      
+      {/* Pagination Controls */}
+      {totalPages > 1 && (
+        <div className="pagination-container">
+          <button 
+            className="pagination-btn prev-btn" 
+            onClick={handlePrevPage}
+            disabled={currentPage === 1}
+          >
+            <FaChevronLeft /> Previous
+          </button>
+          
+          <span className="pagination-info">
+            Page {currentPage} of {totalPages}
+          </span>
+          
+          <button 
+            className="pagination-btn next-btn" 
+            onClick={handleNextPage}
+            disabled={currentPage === totalPages}
+          >
+            Next <FaChevronRight />
+          </button>
+        </div>
+      )}
     </section>
   );
 };

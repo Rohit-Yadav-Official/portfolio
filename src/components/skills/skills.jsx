@@ -25,11 +25,15 @@ const Skills = () => {
   ];
 
   return (
-    <div className="skill">
+    <section id="skills" className="skill">
       <div className="colum1">
         {skills1.map((skill) => (
           <div key={skill.name}>
-            <img src={skill.img} alt={skill.name} />
+            <img 
+              src={skill.img} 
+              alt={`Rohit Yadav ${skill.name} Skill - Backend Developer`}
+              title={`${skill.name} expertise by Rohit Yadav`}
+            />
             <div style={{ flex: 1 }}>
               <span>{skill.name}</span>
               <div className="progress-container">
@@ -47,7 +51,11 @@ const Skills = () => {
       <div className="colum2">
         {skills2.map((skill) => (
           <div key={skill.name}>
-            <img src={skill.img} alt={skill.name} />
+            <img 
+              src={skill.img} 
+              alt={`Rohit Yadav ${skill.name} Skill - Backend Developer`}
+              title={`${skill.name} expertise by Rohit Yadav`}
+            />
             <div style={{ flex: 1 }}>
               <span>{skill.name}</span>
               <div className="progress-container">
@@ -61,7 +69,7 @@ const Skills = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

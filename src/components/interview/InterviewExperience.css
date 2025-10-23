@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Interview Experience List Styles */
+.interview-experience-section {
+  background-color: #121212;
+  color: #ffffff;
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.interview-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.interview-main-title {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 2rem;
+  color: #3b82f6;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.interview-subtitle {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.8rem;
+  color: #a1a1a1;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Interview Grid */
+.interview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.interview-card {
+  background-color: #1e1e1e;
+  border: 1px solid #2e2e2e;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.interview-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.3);
+  border-color: #3b82f6;
+}
+
+.interview-card-image {
+  width: 100%;
+  height: 200px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.interview-card-image img {
+  max-width: 80%;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.interview-card-content {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.interview-card-header {
+  margin-bottom: 0.75rem;
+}
+
+.interview-company {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1.1rem;
+  color: #3b82f6;
+  margin-bottom: 0.5rem;
+}
+
+.interview-role {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.7rem;
+  color: #9ca3af;
+  display: block;
+}
+
+.interview-date {
+  font-size: 0.65rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+  font-family: 'Press Start 2P', monospace;
+}
+
+.interview-summary {
+  font-size: 0.75rem;
+  color: #d1d5db;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  flex: 1;
+}
+
+.interview-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.interview-tag {
+  background-color: #2e2e2e;
+  color: #3b82f6;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.6rem;
+  font-family: 'Press Start 2P', monospace;
+  border: 1px solid #3b82f6;
+}
+
+/* No Experiences */
+.no-experiences {
+  text-align: center;
+  padding: 4rem 2rem;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+/* Pagination */
+.interview-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+/* Interview Detail Styles */
+.interview-detail-container {
+  background-color: #121212;
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 3rem 2rem;
+}
+
+.back-link,
+.back-link-bottom {
+  display: inline-block;
+  color: #3b82f6;
+  text-decoration: none;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.7rem;
+  margin-bottom: 2rem;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover,
+.back-link-bottom:hover {
+  color: #60a5fa;
+}
+
+.interview-detail {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #1e1e1e;
+  border: 1px solid #2e2e2e;
+  border-radius: 8px;
+  padding: 3rem;
+}
+
+.interview-detail-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  border-bottom: 2px solid #2e2e2e;
+  padding-bottom: 2rem;
+}
+
+.company-logo {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.company-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.detail-title {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1.5rem;
+  color: #3b82f6;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.detail-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.detail-date {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.7rem;
+  color: #9ca3af;
+}
+
+.detail-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.detail-tag {
+  background-color: #2e2e2e;
+  color: #3b82f6;
+  padding: 0.35rem 1rem;
+  border-radius: 4px;
+  font-size: 0.6rem;
+  font-family: 'Press Start 2P', monospace;
+  border: 1px solid #3b82f6;
+}
+
+/* Content Rendering */
+.interview-content {
+  line-height: 1.8;
+}
+
+.content-heading {
+  font-family: 'Press Start 2P', monospace;
+  color: #60a5fa;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.content-heading.level-1 {
+  font-size: 1.3rem;
+  color: #3b82f6;
+}
+
+.content-heading.level-2 {
+  font-size: 1.1rem;
+}
+
+.content-heading.level-3 {
+  font-size: 0.9rem;
+}
+
+.content-paragraph {
+  margin-bottom: 1.5rem;
+  color: #d1d5db;
+  line-height: 1.8;
+}
+
+.content-paragraph.font-small {
+  font-size: 0.8rem;
+}
+
+.content-paragraph.font-medium {
+  font-size: 0.95rem;
+}
+
+.content-paragraph.font-large {
+  font-size: 1.1rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.content-list {
+  margin: 1.5rem 0;
+  padding-left: 2rem;
+  color: #d1d5db;
+}
+
+.content-list li {
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.content-list li::marker {
+  color: #3b82f6;
+}
+
+.content-image {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.content-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid #2e2e2e;
+}
+
+.image-caption {
+  font-size: 0.8rem;
+  color: #9ca3af;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.interview-footer {
+  max-width: 900px;
+  margin: 2rem auto 0;
+  text-align: center;
+}
+
+/* Not Found */
+.not-found {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.not-found h1 {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1.5rem;
+  color: #ef4444;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .interview-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .interview-main-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .interview-experience-section {
+    padding: 2rem 1rem;
+  }
+  
+  .interview-main-title {
+    font-size: 1.2rem;
+  }
+  
+  .interview-subtitle {
+    font-size: 0.7rem;
+  }
+  
+  .interview-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .interview-detail {
+    padding: 2rem 1.5rem;
+  }
+  
+  .detail-title {
+    font-size: 1.1rem;
+  }
+  
+  .content-heading.level-1 {
+    font-size: 1.1rem;
+  }
+  
+  .content-heading.level-2 {
+    font-size: 0.95rem;
+  }
+  
+  .interview-pagination {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .pagination-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .interview-main-title {
+    font-size: 1rem;
+  }
+  
+  .interview-subtitle {
+    font-size: 0.6rem;
+  }
+  
+  .interview-company {
+    font-size: 0.9rem;
+  }
+  
+  .interview-detail {
+    padding: 1.5rem 1rem;
+  }
+  
+  .detail-title {
+    font-size: 0.9rem;
+  }
+  
+  .company-logo {
+    width: 100px;
+    height: 100px;
+  }
+}

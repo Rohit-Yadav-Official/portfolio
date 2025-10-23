@@ -3,14 +3,49 @@
   <url>
     <loc>https://yadavrohit.in/</loc>
     <lastmod>2025-05-07</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://yadavrohit.in/blog</loc>
     <lastmod>2025-05-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
-  <!-- Add more pages as needed -->
+  <url>
+    <loc>https://yadavrohit.in/interview-experience</loc>
+    <lastmod>2025-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yadavrohit.in/interview-experience/1</loc>
+    <lastmod>2025-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yadavrohit.in/interview-experience/2</loc>
+    <lastmod>2025-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yadavrohit.in/interview-experience/3</loc>
+    <lastmod>2025-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yadavrohit.in/interview-experience/4</loc>
+    <lastmod>2025-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yadavrohit.in/interview-experience/5</loc>
+    <lastmod>2025-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

@@ -1,4 +1,18 @@
+# Robots.txt for yadavrohit.in - Rohit Yadav Backend Developer Portfolio
 User-agent: *
 Allow: /
+Allow: /blog
+Allow: /interview-experience
+Allow: /interview-experience/*
 
+# Disallow unnecessary paths
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /.git/
+Disallow: /dist/
+
+# Sitemap
 Sitemap: https://yadavrohit.in/sitemap.xml
+
+# Crawl-delay (optional, helps with server load)
+Crawl-delay: 1

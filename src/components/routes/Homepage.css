@@ -1,9 +1,9 @@
 .content {
     display: flex;
     flex-direction: column;
-    gap: 2rem; /* Spacing between Bounce, Intro, and Skills */
+    gap: 2rem;
     align-items: center;
-    width: 70%;
-   /* Add padding around components */
+    width: 100%;
+    max-width: 100%;
   }
   

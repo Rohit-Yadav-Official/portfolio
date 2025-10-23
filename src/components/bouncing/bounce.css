@@ -7,15 +7,15 @@
 /* Image style with bounce and fly-in animation */
 .bouncing-image {
   position: absolute;
-  top: 30%; /* Start vertically centered */
-  left: 0; /* Start at the left edge of the container */
+  top: 30%;
+  left: 0;
   transform: translateY(-50%);
-  width: 180px; /* Image size */
+  width: clamp(120px, 15vw, 180px);
   height: auto;
   animation: flyInSpace 15s linear infinite, bounceUpDown 5s ease-in-out infinite alternate;
-  cursor: pointer; /* Pointer cursor on hover */
+  cursor: pointer;
   transition: opacity 0.3s ease-in-out;
-  z-index: 5; /* Smooth transition for opacity */
+  z-index: 5;
 }
 
 /* Keyframe for bouncing up and down */
@@ -56,4 +56,20 @@
 /* When the animation is paused on hidden state, stop the movement */
 .stopped-animation {
   animation-play-state: paused !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .bouncing-image {
+    width: clamp(80px, 12vw, 120px);
+    top: 35%;
+  }
+}
+
+@media (max-width: 480px) {
+  .bouncing-image {
+    width: clamp(60px, 10vw, 80px);
+    top: 40%;
+    animation: flyInSpace 20s linear infinite, bounceUpDown 6s ease-in-out infinite alternate;
+  }
 }

@@ -5,19 +5,22 @@
   color: #ffffff;
   padding: 3rem;
   font-family: 'Press Start 2P', monospace;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .medium-heading {
   font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 
 .medium-subtext {
   font-size: 0.8rem;
   color: #a1a1a1;
   margin-bottom: 1.5rem;
+  line-height: 1.5;
 }
 
 .rss-link {
@@ -27,6 +30,7 @@
   color: #f97316;
   font-weight: 500;
   margin-bottom: 2rem;
+  font-size: 0.75rem;
 }
 
 .rss-icon {
@@ -49,7 +53,8 @@
 .medium-date {
   min-width: 120px;
   color: #9ca3af;
-  font-size: 0.95rem;
+  font-size: 0.7rem;
+  flex-shrink: 0;
 }
 
 .medium-content {
@@ -60,12 +65,14 @@
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
+  line-height: 1.4;
 }
 
 .medium-snippet {
   color: #d1d5db;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   margin-bottom: 0.8rem;
+  line-height: 1.6;
 }
 
 .medium-read-link {
@@ -75,9 +82,197 @@
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
+  font-size: 0.7rem;
+  transition: color 0.3s ease;
+}
+
+.medium-read-link:hover {
+  color: #60a5fa;
 }
 
 .medium-read-link .arrow {
   font-size: 1.1rem;
   line-height: 1;
+}
+
+/* Pagination Styles */
+.pagination-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #2e2e2e;
+}
+
+.pagination-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #3b82f6;
+  border-radius: 4px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.65rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background-color: #3b82f6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+}
+
+.pagination-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.pagination-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  border-color: #555;
+}
+
+.pagination-info {
+  color: #9ca3af;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.65rem;
+  white-space: nowrap;
+}
+
+/* Large Screens */
+@media (min-width: 1440px) {
+  .medium-container {
+    padding: 4rem 5rem;
+  }
+  
+  .medium-heading {
+    font-size: 1.6rem;
+  }
+  
+  .medium-subtext {
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .medium-container {
+    padding: 2.5rem 2rem;
+  }
+  
+  .medium-heading {
+    font-size: 1.2rem;
+  }
+  
+  .medium-subtext {
+    font-size: 0.7rem;
+  }
+  
+  .medium-article {
+    gap: 1.5rem;
+  }
+  
+  .medium-date {
+    min-width: 100px;
+    font-size: 0.65rem;
+  }
+  
+  .medium-title {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .medium-container {
+    padding: 2rem 1rem;
+  }
+  
+  .medium-heading {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .medium-subtext {
+    font-size: 0.6rem;
+    line-height: 1.6;
+  }
+  
+  .rss-link {
+    font-size: 0.65rem;
+  }
+  
+  .medium-articles {
+    gap: 1.5rem;
+  }
+  
+  .medium-article {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding-top: 1rem;
+  }
+  
+  .medium-date {
+    min-width: auto;
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .medium-title {
+    font-size: 0.8rem;
+  }
+  
+  .medium-snippet {
+    font-size: 0.65rem;
+  }
+  
+  .medium-read-link {
+    font-size: 0.65rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .medium-container {
+    padding: 1.5rem 0.75rem;
+  }
+  
+  .medium-heading {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+  
+  .medium-subtext {
+    font-size: 0.55rem;
+  }
+  
+  .rss-link {
+    font-size: 0.6rem;
+  }
+  
+  .medium-title {
+    font-size: 0.7rem;
+  }
+  
+  .medium-snippet {
+    font-size: 0.6rem;
+  }
+  
+  .medium-read-link {
+    font-size: 0.6rem;
+  }
+  
+  .pagination-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.55rem;
+  }
+  
+  .pagination-info {
+    font-size: 0.55rem;
+  }
 }
