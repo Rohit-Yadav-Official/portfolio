@@ -35,7 +35,7 @@
   margin: 1rem;
   cursor: pointer;
   
-  cursor: url('../../assets/point.png'), pointer; /* Change cursor on hover */
+  cursor: url('../../assets/point.png') 8 8, pointer; /* Change cursor on hover */
   
   
 }
@@ -47,7 +47,7 @@
 }
 .contactButton{
   background-color: white;
-  cursor: url('../../assets/point.png'), pointer;
+  cursor: url('../../assets/point.png') 8 8, pointer;
   color: black;
   font-family: 'Press Start 2P', monospace; /* Pixel-style font */
    /* Adjust for consistent typography */

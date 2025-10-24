@@ -45,15 +45,15 @@ const Navbar = () => {
 
       <div className={`right section ${menuOpen ? 'open' : ''}`}>
         <div className="desktopMenu">
-          <ScrollLink to="intro" className="desktopMenuListItem" smooth={true} duration={500}>Home</ScrollLink>
-          <ScrollLink to="projects" className="desktopMenuListItem" smooth={true} duration={500}>Projects</ScrollLink>
-          <ScrollLink to="dsa" className="desktopMenuListItem" smooth={true} duration={500}>DSA</ScrollLink>
-          <Link to="/blog" className="desktopMenuListItem">Blog</Link>
+          <ScrollLink to="intro" className="desktopMenuListItem navbar-cursor" smooth={true} duration={500}>Home</ScrollLink>
+          <ScrollLink to="projects" className="desktopMenuListItem navbar-cursor" smooth={true} duration={500}>Projects</ScrollLink>
+          <ScrollLink to="dsa" className="desktopMenuListItem navbar-cursor" smooth={true} duration={500}>DSA</ScrollLink>
+          <Link to="/blog" className="desktopMenuListItem navbar-cursor">Blog</Link>
           
           {/* Dropdown Menu */}
           <div className="dropdown-container" ref={dropdownRef}>
             <button 
-              className="dropdown-trigger desktopMenuListItem"
+              className="dropdown-trigger desktopMenuListItem navbar-cursor"
               onClick={toggleDropdown}
             >
               More <FaChevronDown className={`dropdown-arrow ${dropdownOpen ? 'open' : ''}`} />
@@ -62,7 +62,7 @@ const Navbar = () => {
             <div className={`dropdown-menu ${dropdownOpen ? 'open' : ''}`}>
               <Link 
                 to="/interview-experience" 
-                className="dropdown-item"
+                className="dropdown-item navbar-cursor"
                 onClick={() => {
                   setDropdownOpen(false);
                   setMenuOpen(false);
@@ -72,7 +72,7 @@ const Navbar = () => {
               </Link>
               <Link 
                 to="/core-subject" 
-                className="dropdown-item"
+                className="dropdown-item navbar-cursor"
                 onClick={() => {
                   setDropdownOpen(false);
                   setMenuOpen(false);
@@ -82,7 +82,7 @@ const Navbar = () => {
               </Link>
               <ScrollLink 
                 to="contact" 
-                className="dropdown-item"
+                className="dropdown-item navbar-cursor"
                 smooth={true} 
                 duration={500}
                 onClick={() => {

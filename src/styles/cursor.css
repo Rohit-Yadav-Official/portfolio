@@ -1,0 +1,112 @@
+/* Custom Cursor System */
+/* This file provides a comprehensive cursor system for better alignment and responsiveness */
+
+/* Base cursor with proper hotspot positioning */
+.cursor-default {
+  cursor: url('./assets/cursor.png') 16 16, auto;
+}
+
+/* Pointer cursor for interactive elements */
+.cursor-pointer {
+  cursor: url('./assets/point.png') 8 8, pointer;
+}
+
+/* Hover cursor for clickable elements */
+.cursor-hover {
+  cursor: url('./assets/point.png') 8 8, pointer;
+}
+
+/* Text cursor for input fields */
+.cursor-text {
+  cursor: text;
+}
+
+/* Disabled cursor */
+.cursor-disabled {
+  cursor: not-allowed;
+}
+
+/* Loading cursor */
+.cursor-loading {
+  cursor: wait;
+}
+
+/* Resize cursors */
+.cursor-resize-horizontal {
+  cursor: ew-resize;
+}
+
+.cursor-resize-vertical {
+  cursor: ns-resize;
+}
+
+.cursor-resize-diagonal {
+  cursor: nw-resize;
+}
+
+/* Custom cursor for specific components */
+.navbar-cursor {
+  cursor: url('./assets/point.png') 8 8, pointer;
+}
+
+.footer-cursor {
+  cursor: url('./assets/point.png') 8 8, pointer;
+}
+
+.social-cursor {
+  cursor: url('./assets/point.png') 8 8, pointer;
+}
+
+.button-cursor {
+  cursor: url('./assets/point.png') 8 8, pointer;
+}
+
+.link-cursor {
+  cursor: url('./assets/point.png') 8 8, pointer;
+}
+
+/* Hover effects with cursor */
+.hover-cursor:hover {
+  cursor: url('./assets/point.png') 8 8, pointer;
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+/* Disable custom cursor on mobile and touch devices */
+@media (max-width: 768px), (hover: none) {
+  .cursor-default,
+  .cursor-pointer,
+  .cursor-hover,
+  .navbar-cursor,
+  .footer-cursor,
+  .social-cursor,
+  .button-cursor,
+  .link-cursor {
+    cursor: auto !important;
+  }
+  
+  .hover-cursor:hover {
+    cursor: pointer !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .cursor-pointer,
+  .cursor-hover,
+  .navbar-cursor,
+  .footer-cursor,
+  .social-cursor,
+  .button-cursor,
+  .link-cursor {
+    cursor: pointer;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .hover-cursor:hover {
+    transform: none;
+    transition: none;
+  }
+}

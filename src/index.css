@@ -1,3 +1,6 @@
+/* Import cursor system */
+@import './styles/cursor.css';
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -30,8 +33,32 @@ body {
   min-height: 100vh;
   z-index: 0;
   overflow-y: scroll; /* Allow vertical scroll */
-  cursor: url('./assets/cursor.png'), auto;
-  /* Change cursor on hover */
+  cursor: url('./assets/cursor.png') 16 16, auto;
+  /* Custom cursor with proper hotspot positioning */
+}
+
+/* Global cursor styles for better alignment */
+* {
+  cursor: url('./assets/cursor.png') 16 16, auto;
+}
+
+/* Hover cursor for interactive elements */
+a, button, [role="button"], .clickable {
+  cursor: url('./assets/point.png') 8 8, pointer;
+}
+
+/* Specific cursor for different elements */
+.navbar-link, .footer-link, .social-link {
+  cursor: url('./assets/point.png') 8 8, pointer;
+}
+
+/* Disable custom cursor on mobile devices */
+@media (max-width: 768px) {
+  body, * {
+    cursor: auto !important;
+  }
   
-  
+  a, button, [role="button"], .clickable {
+    cursor: pointer !important;
+  }
 }

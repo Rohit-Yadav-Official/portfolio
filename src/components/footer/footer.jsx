@@ -23,7 +23,7 @@ const Footer = () => {
                 href="https://github.com/Rohit-Yadav-Official" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="social-link"
+                className="social-link social-cursor"
                 aria-label="GitHub Profile"
               >
                 <FaGithub />
@@ -32,7 +32,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/in/rohityadav12/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="social-link"
+                className="social-link social-cursor"
                 aria-label="LinkedIn Profile"
               >
                 <FaLinkedin />
@@ -41,7 +41,7 @@ const Footer = () => {
                 href="https://www.youtube.com/@multivitamin_coder" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="social-link"
+                className="social-link social-cursor"
                 aria-label="YouTube Channel"
               >
                 <FaYoutube />
@@ -50,7 +50,7 @@ const Footer = () => {
                 href="https://twitter.com/RohitYadav_dev" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="social-link"
+                className="social-link social-cursor"
                 aria-label="Twitter Profile"
               >
                 <FaTwitter />
@@ -62,27 +62,27 @@ const Footer = () => {
             <h4 className="footer-heading">Quick Links</h4>
             <ul className="footer-links">
               <li>
-                <ScrollLink to="intro" smooth={true} duration={500} className="footer-link">
+                <ScrollLink to="intro" smooth={true} duration={500} className="footer-link footer-cursor">
                   Home
                 </ScrollLink>
               </li>
               <li>
-                <ScrollLink to="skills" smooth={true} duration={500} className="footer-link">
+                <ScrollLink to="skills" smooth={true} duration={500} className="footer-link footer-cursor">
                   Skills
                 </ScrollLink>
               </li>
               <li>
-                <ScrollLink to="projects" smooth={true} duration={500} className="footer-link">
+                <ScrollLink to="projects" smooth={true} duration={500} className="footer-link footer-cursor">
                   Projects
                 </ScrollLink>
               </li>
               <li>
-                <ScrollLink to="dsa" smooth={true} duration={500} className="footer-link">
+                <ScrollLink to="dsa" smooth={true} duration={500} className="footer-link footer-cursor">
                   DSA
                 </ScrollLink>
               </li>
               <li>
-                <ScrollLink to="contact" smooth={true} duration={500} className="footer-link">
+                <ScrollLink to="contact" smooth={true} duration={500} className="footer-link footer-cursor">
                   Contact
                 </ScrollLink>
               </li>

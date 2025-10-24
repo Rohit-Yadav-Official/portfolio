@@ -55,7 +55,7 @@
 
 /* Icons (YouTube, LinkedIn, GitHub) */
 .youtube, .linkdin, .github {
-  cursor: url('../../assets/point.png'), pointer;
+  cursor: url('../../assets/point.png') 8 8, pointer;
   height: 40px;
   width: 40px;
   cursor: pointer;
@@ -65,7 +65,7 @@
 .youtube:hover, .linkdin:hover, .github:hover {
   transform: scale(1.2); /* Scale the icon slightly on hover */
   opacity: 0.8; /* Dim the opacity slightly */
-  cursor: url('../../assets/point.png'), pointer;
+  cursor: url('../../assets/point.png') 8 8, pointer;
 }
 
 /* Pixelated Text Style */
@@ -116,7 +116,7 @@
 }
 
 .downloadResume:hover {
-  cursor: url('../../assets/point.png'), pointer;
+  cursor: url('../../assets/point.png') 8 8, pointer;
   transform: scale(0.95);
 }
 
