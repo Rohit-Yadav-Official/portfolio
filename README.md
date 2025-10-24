@@ -220,7 +220,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **LinkedIn**: [rohityadav12](https://www.linkedin.com/in/rohityadav12/)
 - **GitHub**: [Rohit-Yadav-Official](https://github.com/Rohit-Yadav-Official)
 - **YouTube**: [@multivitamin_coder](https://www.youtube.com/@multivitamin_coder)
-- **Email**: [Your Email]
+- **Email**: [roadtocode76448@gmail.com]
 
 ## 🙏 Acknowledgments
 
