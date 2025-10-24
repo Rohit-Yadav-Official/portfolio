@@ -103,6 +103,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/core-subject" className="footer-link">
+                  Core Subjects
+                </Link>
+              </li>
+              <li>
                 <a 
                   href="https://medium.com/@yadavrohit-dev" 
                   target="_blank" 
