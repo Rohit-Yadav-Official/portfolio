@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaRss, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import Footer from "../footer/footer";
 import "./MediumBlogSection.css";
 
 const MediumBlogSection = () => {
@@ -88,6 +89,7 @@ const MediumBlogSection = () => {
           </button>
         </div>
       )}
+      <Footer />
     </section>
   );
 };

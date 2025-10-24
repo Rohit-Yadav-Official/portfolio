@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import interviewExperiences from '../../data/interviewExperiences';
+import Footer from '../footer/footer';
 import './InterviewExperience.css';
 
 const InterviewExperienceDetail = () => {
@@ -99,6 +100,7 @@ const InterviewExperienceDetail = () => {
           ← Back to All Experiences
         </Link>
       </div>
+      <Footer />
     </div>
   );
 };

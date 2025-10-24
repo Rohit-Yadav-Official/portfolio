@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="https://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://yadavrohit.in/</loc>
     <lastmod>2025-05-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://yadavrohit.in/assets/rohit-yadav123.jpg</image:loc>
+      <image:title>Rohit Yadav - Backend Developer Java Spring Boot Expert Mumbai TCET</image:title>
+      <image:caption>Rohit Yadav - Experienced Backend Developer specializing in Java, Spring Boot, and Microservices from Mumbai, India. TCET graduate with expertise in building scalable applications.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://yadavrohit.in/assets/friends3.jpg</image:loc>
+      <image:title>Rohit Yadav with Friends Team Collaboration Software Development Mumbai</image:title>
+      <image:caption>Rohit Yadav with friends and colleagues - Team collaboration in software development projects at TCET Mumbai.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://yadavrohit.in/blog</loc>

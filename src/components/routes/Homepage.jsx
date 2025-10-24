@@ -4,21 +4,26 @@ import Intro from '../intro/intro';
 import Skills from '../skills/skills';
 import Project from '../projects/projects';
 import Dsa from  '../dsa/dsa';
-import Contact from '../contact us/contact'
+import Gallery from '../gallery/gallery';
+import Contact from '../contact us/contact';
+import Footer from '../footer/footer';
 
 
 function HomePage(){
   return(
-    <div className="content">
+    <>
+      <div className="content">
         <Bounce /> {/* Below Navbar */}
         <Intro /> {/* Below Bounce */}
         <Skills /> {/* Below Intro */}
-       <Project/>
+        <Project/>
         <Dsa/>
+        <Gallery /> {/* Gallery with SEO optimized images */}
         <Contact/>
-        
       </div>
-    );
+      <Footer /> {/* Footer at the bottom */}
+    </>
+  );
 
 
 }

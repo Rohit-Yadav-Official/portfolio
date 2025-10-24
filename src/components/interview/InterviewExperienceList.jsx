@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import interviewExperiences from '../../data/interviewExperiences';
+import Footer from '../footer/footer';
 import './InterviewExperience.css';
 
 const InterviewExperienceList = () => {
@@ -101,6 +102,7 @@ const InterviewExperienceList = () => {
           </button>
         </div>
       )}
+      <Footer />
     </section>
   );
 };

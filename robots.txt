@@ -5,6 +5,16 @@ Allow: /blog
 Allow: /interview-experience
 Allow: /interview-experience/*
 
+# Allow image crawling for Google Images
+Allow: /assets/
+Allow: /assets/rohit-yadav123.jpg
+Allow: /assets/friends3.jpg
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.png
+Allow: /*.gif
+Allow: /*.webp
+
 # Disallow unnecessary paths
 Disallow: /node_modules/
 Disallow: /src/
