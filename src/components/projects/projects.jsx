@@ -9,7 +9,7 @@ const Projects = () => {
       description: "A modern social media platform built with React and Node.js, featuring real-time messaging, user profiles, and content sharing capabilities.",
       technologies: ["React", "Java", "Postgres", "RabbitMq", "Spring Boot"],
       liveUrl: "https://earnfame.netlify.app",
-      githubUrl: "https://github.com/Rohit-Yadav-Official/earnfame",
+      githubUrl: "https://github.com/Rohit-Yadav-Official/fame",
       image: fame
     },
     { 
