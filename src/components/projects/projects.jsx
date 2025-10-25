@@ -1,15 +1,16 @@
 import './projects.css';
-
+import fame from '../../assets/fame-photo.png';
+import portfolio from '../../assets/portfolio-image.png';
 const Projects = () => {
   const projectList = [
     { 
       id: 1, 
-      title: "EarnFame - Social Media Platform", 
+      title: "EarnFame - Job hunting , earning, competing Platform", 
       description: "A modern social media platform built with React and Node.js, featuring real-time messaging, user profiles, and content sharing capabilities.",
-      technologies: ["React", "Node.js", "MongoDB", "Socket.io", "Express"],
+      technologies: ["React", "Java", "Postgres", "RabbitMq", "Spring Boot"],
       liveUrl: "https://earnfame.netlify.app",
       githubUrl: "https://github.com/Rohit-Yadav-Official/earnfame",
-      image: "/api/placeholder/400/300"
+      image: fame
     },
     { 
       id: 2, 
@@ -18,7 +19,7 @@ const Projects = () => {
       technologies: ["React", "Vite", "CSS3", "JavaScript", "Netlify"],
       liveUrl: "https://your-portfolio-url.com",
       githubUrl: "https://github.com/Rohit-Yadav-Official/portfolio",
-      image: "/api/placeholder/400/300"
+      image: portfolio
     },
     { 
       id: 3, 
