@@ -4,7 +4,7 @@ A modern, responsive portfolio website built with React and Vite, showcasing my 
 
 ## 🚀 Live Demo
 
-[View Live Portfolio](https://your-portfolio-url.com) <!-- Replace with actual URL -->
+[View Live Portfolio](https://earnfame.netlify.app) - **EarnFame Social Media Platform**
 
 ## 📋 Table of Contents
 
@@ -128,6 +128,7 @@ src/
 - **Version Control**: Git
 
 ### 3. **Projects**
+- **EarnFame Social Media Platform** - [Live Demo](https://earnfame.netlify.app)
 - Portfolio showcase with project cards
 - Detailed project descriptions
 - Technology stack for each project
