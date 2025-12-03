@@ -2,8 +2,8 @@
 // Comprehensive content for Operating Systems, Computer Networks, and DSA
 
 const coreSubjects = {
-  os: {
-    id: 'os',
+  operating_system: {
+    id: 'operating_system',
     title: 'Operating Systems',
     description: 'Complete guide to Operating Systems concepts including processes, threads, deadlocks, scheduling algorithms, and memory management.',
     icon: '🖥️',
@@ -217,8 +217,8 @@ const coreSubjects = {
       }
     ]
   },
-  cn: {
-    id: 'cn',
+  computer_network: {
+    id: 'computer_network',
     title: 'Computer Networks',
     description: 'Complete guide to Computer Networks including OSI model, TCP/IP, protocols, routing, and network security.',
     icon: '🌐',
