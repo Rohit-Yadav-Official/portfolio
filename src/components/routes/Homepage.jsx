@@ -7,7 +7,7 @@ import Dsa from  '../dsa/dsa';
 import Gallery from '../gallery/gallery';
 import Contact from '../contact us/contact';
 import Footer from '../footer/footer';
-
+import HireMeMarquee from '../HireMeMarquee/hireMeMarquee';
 
 function HomePage(){
   return(
@@ -15,7 +15,9 @@ function HomePage(){
       <div className="content">
         <Bounce /> {/* Below Navbar */}
         <Intro /> {/* Below Bounce */}
-        <Skills /> {/* Below Intro */}
+       
+        <Skills /> {/* Below Intro */} 
+        <HireMeMarquee /> {/* Below Intro */}
         <Project/>
         <Dsa/>
         <Gallery /> {/* Gallery with SEO optimized images */}

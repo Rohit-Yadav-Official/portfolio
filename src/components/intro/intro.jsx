@@ -6,12 +6,26 @@ import github from "../../assets/git.jpg";
 import linkdin from "../../assets/linkdin.png";
 import resume from "../../assets/resume645.pdf";
 import resumeb from "../../assets/resumebutton.png";
+import hireme from "../../assets/hire_me.png";
 import "./intro.css";
 
 const Intro = () => {
   return (
     <section id="intro">
       <div className="introcontent">
+           
+
+      {/* <a href="#contact" className="hireme-strip">
+           <img
+               src={hireme}
+               alt="Hire Rohit Yadav – Backend Developer"
+               title="Hire Rohit Yadav | Java • Spring Boot • AWS"
+           />
+          
+       </a> */}
+        
+
+
         {/* Image Section */}
         <div className="img">
           <img 
@@ -70,6 +84,17 @@ const Intro = () => {
         title="Rohit Yadav - Backend Developer specializing in Java, Spring Boot, Microservices, and System Design"
         className="bg" 
       />
+
+      
+   {/* <a href="#contact" className="hireme-strip">
+           <img
+               src={hireme}
+               alt="Hire Rohit Yadav – Backend Developer"
+               title="Hire Rohit Yadav | Java • Spring Boot • AWS"
+           />
+          
+       </a> */}
+        
     </section>
   );
 };
