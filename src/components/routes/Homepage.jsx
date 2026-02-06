@@ -7,7 +7,7 @@ import Dsa from  '../dsa/dsa';
 import Gallery from '../gallery/gallery';
 import Contact from '../contact us/contact';
 import Footer from '../footer/footer';
-import HireMeMarquee from '../HireMeMarquee/hireMeMarquee';
+import HireMeMarquee from '../HireMeMarquee/HireMeMarquee';
 
 function HomePage(){
   return(

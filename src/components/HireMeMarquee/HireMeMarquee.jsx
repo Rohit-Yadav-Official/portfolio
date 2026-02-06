@@ -1,5 +1,5 @@
 import hireme from "../../assets/hire_me.png";
-import "./hireMeMarquee.css";
+import "./HireMeMarquee.css";
 
 const HireMeMarquee = () => {
   return (
