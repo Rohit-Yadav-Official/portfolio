@@ -6,7 +6,7 @@ import github from "../../assets/git.jpg";
 import linkdin from "../../assets/linkdin.png";
 import resume from "../../assets/resume645.pdf";
 import resumeb from "../../assets/resumebutton.png";
-import hireme from "../../assets/hire_me.png";
+
 import "./intro.css";
 
 const Intro = () => {
