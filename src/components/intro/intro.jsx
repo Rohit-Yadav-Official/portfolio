@@ -62,7 +62,7 @@ const Intro = () => {
 
         {/* Text Section */}
         <span className="introText">
-          I&apos;m <span className="introName">just checking | ci \cd Rohit Yadav</span>
+          I&apos;m <span className="introName">Rohit Yadav</span>
           <br />
          java ai engineer | backend developer
         </span>
