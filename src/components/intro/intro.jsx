@@ -64,7 +64,7 @@ const Intro = () => {
         <span className="introText">
           I&apos;m <span className="introName">Rohit Yadav</span>
           <br />
-         java ai engineer | backend developer
+          <span className="introName"> java ai </span> engineer | <span className="introName"> backend </span> developer
         </span>
 
         {/* Download Resume Button */}
